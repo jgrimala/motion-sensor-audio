@@ -23,8 +23,8 @@ The **Motion-Controlled Sound** app is a web-based application that utilizes mot
 
 1. **Download or Clone the Repository**
    ```sh
-   git clone https://github.com/your-repo/motion-sound-audio.git
-   cd motion-sound-audio
+   git clone https://github.com/your-repo/motion-sensor-audio.git
+   cd motion-sensor-audio
    ```
 
 2. **Open the `index.html` File in a Browser**
@@ -40,10 +40,12 @@ The **Motion-Controlled Sound** app is a web-based application that utilizes mot
 ## File Structure
 
 ```
-motion-sound-audio/
-│── index.html   # Main HTML file
-│── style.css    # Stylesheet for UI
-└── script.js    # JavaScript logic for sound and motion tracking
+motion-sensor-audio/
+│── LICENSE        # MIT License file
+│── README.md      # Documentation
+│── index.html     # Main HTML file
+│── style.css      # Stylesheet
+└── script.js      # JavaScript logic for sound and motion tracking
 ```
 
 ## How It Works
@@ -53,6 +55,28 @@ motion-sound-audio/
 - **Motion-Based Sound Control**:
   - **Pitch** (Hz) is adjusted based on **front/back tilt** (`event.beta`).
   - **Volume** is modified based on **side tilt** (`event.gamma`).
+
+## Testing Requirements
+
+To test the motion sensor functionality, the project **must be served over HTTPS** due to security restrictions in modern browsers.
+
+### 🔹 Testing on GitHub Pages (Recommended)
+1. Push your code to a **GitHub repository**.
+2. Enable **GitHub Pages**:
+   - Go to your repo settings → "Pages".
+   - Select the `main` branch and `/root` as the source.
+   - GitHub will generate a secure URL:  
+     `https://your-username.github.io/motion-sensor-audio/`
+3. Open the GitHub Pages link on your **mobile device** (iPhone/Android).
+
+### 🔹 Local HTTPS Testing
+If you need to test **locally**, start a local HTTPS server:
+```sh
+npx http-server -S -C cert.pem -K key.pem
+```
+or use a **localhost HTTPS server** like Live Server in VS Code.
+
+👉 **Note**: Motion sensors will **not work** on `file://` or plain `http://` pages in mobile browsers.
 
 ## Known Issues & Limitations
 
