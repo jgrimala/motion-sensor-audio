@@ -23,7 +23,7 @@ The **Motion-Controlled Sound** app is a web-based application that utilizes mot
 
 1. **Download or Clone the Repository**
    ```sh
-   git clone https://github.com/your-repo/motion-sound-app.git
+   git clone https://github.com/your-repo/motion-sound-audio.git
    cd motion-sound-app
    ```
 
