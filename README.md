@@ -24,7 +24,7 @@ The **Motion-Controlled Sound** app is a web-based application that utilizes mot
 1. **Download or Clone the Repository**
    ```sh
    git clone https://github.com/your-repo/motion-sound-audio.git
-   cd motion-sound-app
+   cd motion-sound-audio
    ```
 
 2. **Open the `index.html` File in a Browser**
@@ -40,7 +40,7 @@ The **Motion-Controlled Sound** app is a web-based application that utilizes mot
 ## File Structure
 
 ```
-motion-sound-app/
+motion-sound-audio/
 │── index.html   # Main HTML file
 │── style.css    # Stylesheet for UI
 └── script.js    # JavaScript logic for sound and motion tracking
